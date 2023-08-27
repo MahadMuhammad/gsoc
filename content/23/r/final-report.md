@@ -129,6 +129,7 @@ In my initial attempts, I encountered difficulty in successfully passing the eva
 ## Work for the future:
 - Expanding the range of error codes and messages to cover more scenarios.
 - Updating the error handling code for the existing error codes to incorporate `rich locations`, which offer more details about the error location, and facilitate users and developers to debug and enhance their code.
+- Fixing the ICE issues that are still present in the current version of gccrs.
 
 ## Acknowledgements:
 I am very grateful to the following people who made this project possible and supported me throughout the process. Their expertise, feedback and encouragement were invaluable for me. 
