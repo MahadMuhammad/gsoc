@@ -46,30 +46,30 @@ In a prior development phase, [David Malcolm](https://github.com/davidmalcolm) e
 ```rust
 fn main() {
     let x = 5;
-    let x_is_nonzero = x as bool; // { dg-error "cannot cast .<integer>. as .bool." }
+    let x_is_nonzero = x as bool; 
 
-    0u32 as char; // { dg-error "cannot cast .u32. as .char., only .u8. can be cast as .char." }
+    0u32 as char; 
 
-    let x = &[1_usize, 2] as [usize]; // { dg-error "cast to unsized type: .& .usize:CAPACITY.. as ..usize.." }
+    let x = &[1_usize, 2] as [usize];
 
-    let a = &0u8; // Here, `x` is a `&u8`.
-    let y: u32 = a as u32; // { dg-error "casting .& u8. as .u32. is invalid" }
+    let a = &0u8; 
+    let y: u32 = a as u32; 
 }
 ```
 ### Previous State:
 The previous version exhibited the following output:
 ```bash
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:3:24: error: invalid cast ‘<integer>’ to ‘bool’ [E0054]
-    3 |     let x_is_nonzero = x as bool; // { dg-error "cannot cast .<integer>. as .bool." }
+    3 |     let x_is_nonzero = x as bool; 
       |                        ^    ~~~~
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:5:5: error:invalid cast ‘u32’ to ‘char’ [E0054]
-    5 |     0u32 as char; // { dg-error "cannot cast .u32. as .char., only .u8. can be cast as .char." }
+    5 |     0u32 as char; 
       |     ^~~~    ~~~~
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:7:13: error: invalid cast ‘& [usize:CAPACITY]’ to ‘[usize]’ [E0054]
-    7 |     let x = &[1_usize, 2] as [usize]; // { dg-error "cast to unsized type: .& .usize:CAPACITY.. as ..usize.." }
+    7 |     let x = &[1_usize, 2] as [usize]; 
       |             ^                ~
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:10:18: error: invalid cast ‘& u8’ to ‘u32’ [E0054]
-   10 |     let y: u32 = a as u32; // { dg-error "casting .& u8. as .u32. is invalid" }
+   10 |     let y: u32 = a as u32;
       |                  ^    ~~~
 ```
 ### Current State:
@@ -77,16 +77,16 @@ With the incorporation of the latest type checking code, the system now emits mo
 
 ```bash
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:3:24: error: cannot cast ‘<integer>’ as ‘bool’ [E0054]
-    3 |     let x_is_nonzero = x as bool; // { dg-error "cannot cast .<integer>. as .bool." }
+    3 |     let x_is_nonzero = x as bool;
       |                        ^    ~~~~
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:5:5: error: cannot cast ‘u32’ as ‘char’, only ‘u8’ can be cast as ‘char’ [E0604]
-    5 |     0u32 as char; // { dg-error "cannot cast .u32. as .char., only .u8. can be cast as .char." }
+    5 |     0u32 as char; 
       |     ^~~~    ~~~~
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:7:13: error: cast to unsized type: ‘& [usize:CAPACITY]’ as ‘[usize]’ [E0620]
-    7 |     let x = &[1_usize, 2] as [usize]; // { dg-error "cast to unsized type: .& .usize:CAPACITY.. as ..usize.." }
+    7 |     let x = &[1_usize, 2] as [usize]; 
       |             ^                ~
 ~/gccrs/gcc/testsuite/rust/compile/all-cast.rs:10:18: error: casting ‘& u8’ as ‘u32’ is invalid [E0606]
-   10 |     let y: u32 = a as u32; // { dg-error "casting .& u8. as .u32. is invalid" }
+   10 |     let y: u32 = a as u32; 
       |                  ^    ~~~
 ```
 
