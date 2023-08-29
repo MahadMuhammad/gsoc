@@ -124,7 +124,7 @@ To delve deeper into the intricacies of the issues I've engaged with, feel free 
 - Honed time and project management adeptness using versatile tools, notably [GitHub Projects](https://github.com/users/MahadMuhammad/projects/7/views/1) 
 ### Overcoming Challenges:
 
-In my initial attempts, I encountered difficulty in successfully passing the evaluations carried out by the CI/CD system. In this context, my mentor [Arthur Cohen](https://github.com/cohenarthur/) guided me to pass the CI/CD. Moreover, during this collaborative effort, we uncovered a weakness within the current CI/CD framework, highlighted in this particular issue: [CI fails if test file contains the word "unexpected" or "unresolved" #2386](https://github.com/Rust-GCC/gccrs/issues/2386).
+In my initial attempts, I encountered difficulty in successfully passing the evaluations carried out by the CI/CD system. In this context, my mentor [Arthur Cohen](https://github.com/cohenarthur/) guided me to pass the CI/CD. Moreover, during this collaborative effort, we uncovered a weakness within the current CI/CD framework, highlighted in this particular issue:  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="#b2564f" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Z"/><path fill="#b2564f" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0a6.5 6.5 0 0 0-13 0Z"/></svg>   [CI fails if test file contains the word "unexpected" or "unresolved" #2386](https://github.com/Rust-GCC/gccrs/issues/2386).
 
 ## Work for the future:
 - Expanding the range of error codes and messages to cover more scenarios.
