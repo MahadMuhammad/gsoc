@@ -906,8 +906,9 @@ than what was expected.
   - <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="#b2564f" d="M8 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3Z"/><path fill="#b2564f" d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0ZM1.5 8a6.5 6.5 0 1 0 13 0a6.5 6.5 0 0 0-13 0Z"/></svg> https://github.com/Rust-GCC/gccrs/issues/2512
 - [ ] [`E0602`](https://doc.rust-lang.org/error_codes/E0602.html)
   - **Error Description:** An unknown or invalid lint was used on the command line.
-- [ ] [`E0603`](https://doc.rust-lang.org/error_codes/E0603.html)
+- [x] [`E0603`](https://doc.rust-lang.org/error_codes/E0603.html)
   - **Error Description:** A private item was used outside its scope.
+  - https://github.com/Rust-GCC/gccrs/pull/2597
 - [x] [`E0604`](https://doc.rust-lang.org/error_codes/E0604.html)
   - **Error Description:** A cast to `char` was attempted on a type other than `u8`.
   - <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24"><path fill="#b174ff" d="M7.105 8.79A3.001 3.001 0 0 0 10 11h4a5.002 5.002 0 0 1 4.927 4.146A3.001 3.001 0 0 1 18 21a3 3 0 0 1-1.105-5.79A3.001 3.001 0 0 0 14 13h-4a4.978 4.978 0 0 1-3-1v3.17a3.001 3.001 0 1 1-2 0V8.83a3.001 3.001 0 1 1 2.105-.04Z"/></svg>  https://github.com/Rust-GCC/gccrs/pull/2528
