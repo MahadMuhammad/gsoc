@@ -89,6 +89,13 @@ With the incorporation of the latest type checking code, the system now emits mo
    10 |     let y: u32 = a as u32; 
       |                  ^    ~~~
 ```
+<details><summary>Here's the video demonstrating the error code usage:</summary>
+<p>
+
+{{< youtube nKYuwgQtki8 >}}
+
+</p>
+</details> 
 
 ## Bugs Finding:
 A comprehensive compilation of the bugs I discovered is available on the dedicated [bugs page](https://mahadmuhammad.github.io/gsoc/23/r/issues/). Among these, here are several intriguing bugs captured my attention and were successfully resolved over the course of my project:
