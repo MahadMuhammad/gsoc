@@ -1,6 +1,6 @@
 ---
 title: "Final Report"
-description: ""
+description: "Final Report for Google Summer of Code 2023 for GNU GCC"
 lead: ""
 date: 2023-08-22T20:09:13+05:00
 lastmod: 2023-08-22T20:09:13+05:00

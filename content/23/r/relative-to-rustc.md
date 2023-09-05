@@ -1,6 +1,6 @@
 ---
 title: "Relative to Rustc"
-description: ""
+description: "Final Report for Google Summer of Code 2023 for GNU GCC"
 lead: ""
 date: 2023-08-23T01:05:20+05:00
 lastmod: 2023-08-23T01:05:20+05:00

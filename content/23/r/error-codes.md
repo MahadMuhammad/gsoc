@@ -1,6 +1,6 @@
 ---
 title: "Error Codes"
-description: ""
+description: "Final Report for Google Summer of Code 2023 for GNU GCC"
 lead: ""
 date: 2023-08-23T01:05:29+05:00
 lastmod: 2023-08-23T01:05:29+05:00
