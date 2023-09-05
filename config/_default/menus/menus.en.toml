@@ -10,11 +10,11 @@
 #   identifier = "gsoc"
 #   url = "/gsoc/"
 
-#[[main]]
-#  name = "Blog"
-#  url = "/blog/"
-#  identifier = "blog"
-#  weight = 30
+[[main]]
+  name = "Blog"
+  url = "/23/os/guide/"
+  identifier = "blog"
+  weight = 30
 
 
 [[social]]
