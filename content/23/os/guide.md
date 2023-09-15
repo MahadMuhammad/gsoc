@@ -48,6 +48,7 @@ Making your first contact with an organization can be a thrilling experience. Le
 - Start by cloning the project locally from the [Chromium website](https://source.chromium.org/chromium) on your machine and carefully read the readme file or [instructions](https://chromium.googlesource.com/chromium/src/+/main/docs/linux/build_instructions.md).
 - While working on the project, if you encounter issues or typos, don't hesitate to raise a pull request.
 - Be humble and ask legitimate questions. Remember that mentors are often busy but will appreciate your initiative.
+  - Here, is the best way to ask questions smartly, [smart questions](http://www.catb.org/~esr/faqs/smart-questions.html).
 - Introduce yourself and explain why you want to contribute to their project.
 
 ## **Find the Right Project**
