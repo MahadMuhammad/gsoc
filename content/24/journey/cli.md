@@ -16,19 +16,27 @@ type: docs
 ---
 
 - Build list of things to translate to dejagnu directives:
-    - `ERROR`
-    - `//~^`, `//~|`, `//~`
-    - `@edition:2018`
+
+  - `ERROR`
+  - `//~^`, `//~|`, `//~`
+  - `@edition:2018`
 
 - First step would be to have a tool that translates `//~ ERROR` to `// dg-error`
 - Repo link: https://github.com/Rust-GCC/rusttest-to-dg
 
 Some rust open source cli projects for reference:
+
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
-
 ### Questions:
+
 - Currently, dejangu ignores the error code in the output. How can we make it check for the error code?
 - Can we use clap for parsing the command line arguments?
 - We cannot merge the testcases in the master, because rustc and gccrs has different error messages?
 - What's the differenece between "&str" amd "&String" in Rust?
+
+### July 8 sync up:
+
+- We need to take a combination of rs and .stderr files from the official rustc testsuite.
+- How to search for a string in a file in Rust e.g., maybe use Regex?
+- How to add failure messages in the test output - XFAIL?
