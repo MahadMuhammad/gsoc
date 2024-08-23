@@ -28,6 +28,8 @@ Some rust open source cli projects for reference:
 
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
 
+## Adding Custom Error Type using **AnyHow**:
+
 ### Questions:
 
 - Currently, dejangu ignores the error code in the output. How can we make it check for the error code?
@@ -40,3 +42,9 @@ Some rust open source cli projects for reference:
 - We need to take a combination of rs and .stderr files from the official rustc testsuite.
 - How to search for a string in a file in Rust e.g., maybe use Regex?
 - How to add failure messages in the test output - XFAIL?
+
+### July 22 sync up:
+
+- What should be the equivalent of revisions?
+- https://github.com/rust-lang/rust/blob/master/tests/ui/associated-types/issue-22037.stderr
+- current gccrs doesn't give errors on .ERROR.

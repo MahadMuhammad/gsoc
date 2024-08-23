@@ -58,11 +58,42 @@ type: docs
   - _Recoverable_: Such as file not found -> Result<T,E>
   - _UnRecoverable_: Such as accessing an invalid index in an array -> panic! macro
 
-### Unrecoverable Error With `Panic`: 
+### Unrecoverable Error With Panic:
+
 - We can track the line number and file name where the panic occurred.
 
-### Recoverable Error With `Result`:
+### Recoverable Error With Result:
+
 - `Result` is an enum with two variants: `Ok` and `Err`.
 - We can use `match` or `unwrap` to handle the result.
   - `unwrap` will panic if the result is `Err` and Ok otherwise.
   - `expect` is similar to `unwrap` but allows us to specify the panic message.
+  - In production, use `expect` rather than `unwrap` to provide a meaningful error message.
+- _Propagating Errors_:
+  - We can use `?` operator to propagate the error to the calling function.
+  - The function must return `Result` type to propagate the error.
+
+### To _panic_ or _not to panic_:
+
+- **panic** makes our code unrecoverable
+- In prototypes / tests, it's okay to panic.
+- If failure is expected, use **Reult** type.
+
+## Generic Types, Traits, Lifetimes:
+
+- Generics enhance code resuability by allowing the same code to operate on different data types.
+- We can extract duplicate code into functions.
+- And on functions, we can use generics to make them work for more than one concrete type.
+- Luckily, we have little run time cost becuase of **monomorphization**.
+
+### Traits: Defining Shared Behavior:
+
+- Learn more about **coherence** and **orphan rules**.
+- TODO: Learn about **blanket implementations**.
+- By using appostrophe (`'`) we are not changing the lifetime.
+  - Rather, we are specfiying rust borrowchecker to reqject the constraints that doesn't satisfy the lifetime.
+
+### Lifetimes:
+
+- TODO: Learn more about **lifetime elision rules**
+- Lifetimes on function or method parameters are called input lifetimes, and lifetimes on return values are called output lifetimes.
