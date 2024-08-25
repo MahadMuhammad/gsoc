@@ -1,8 +1,14 @@
 [[main]]
-  name = "Final GSoC'23 Report"
+  name = "GSoC'23 Report"
   weight = 10
   identifier = "23"
   url = "/23/r/final-report/"
+
+[[main]]
+  name = "GSoC'24 Report"
+  weight = 10
+  identifier = "24"
+  url = "/24/r/final-report/"
 
 # [[main]]
 #   name = "gsoc"
