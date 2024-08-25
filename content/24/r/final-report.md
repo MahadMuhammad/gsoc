@@ -1,5 +1,5 @@
 ---
-title: "Rustc Testsuite Adapter for GCC Rust"
+title: "Report for Rustc Testsuite Adapter"
 description: "Final Report for GCCRS Rustc TestSuite Adaptor"
 lead: ""
 date: 2023-08-22T20:09:13+05:00
@@ -35,10 +35,10 @@ The main exact goal of this project is to have access to a tool which enables us
 
 ## Contributions Overview:
 ### Pull Requests:
-For a comprehensive overview of the pull requests I've submitted, visit [pull requests page](./pulls.md).
+For a comprehensive overview of the pull requests I've submitted, visit [pull requests page](https://mahadmuhammad.github.io/gsoc/24/r/pulls/).
 
 ### Issues:
-To delve deeper into the intricacies of the issues I've engaged with, feel free to explore the dedicated [issue page](./issues.md).
+To delve deeper into the intricacies of the issues I've engaged with, feel free to explore the dedicated [issue page](https://mahadmuhammad.github.io/gsoc/24/r/issues/).
 
 ## Work for the future:
 
