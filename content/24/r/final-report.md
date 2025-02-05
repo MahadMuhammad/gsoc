@@ -33,7 +33,7 @@ The main exact goal of this project is to have access to a tool which enables us
 ## What was Done:
 
 - Researched the Rust testing framework "[compiletest](https://rustc-dev-guide.rust-lang.org/tests/compiletest.html)" to understand how test cases are organized and Rust processes and executes test cases.
-- Learned "Rust" programming language and created a new tool, named [rusttest-to-dg](github.com/Rust-GCC/rusttest-to-dg) to convert the Rust test cases to DejaGnu format.
+- Learned "Rust" programming language and created a new tool, named [rusttest-to-dg](https://github.com/Rust-GCC/rusttest-to-dg) to convert the Rust test cases to DejaGnu format.
 
 For gccrs, we only want to check the [ui](https://rustc-dev-guide.rust-lang.org/tests/ui.html) tests — these tests are a collection of general-purpose tests which primarily focus on validating the console output of the compiler.
 
